@@ -1,0 +1,134 @@
+<%- include ('partials/loginheader') %>
+
+<script>
+
+	var ticketCart;
+	$(document).ready(function(){
+
+		var shopCart = <%- JSON.stringify(cart) %>;
+		ticketCart = shopCart;
+		var userId = shopCart.user_id;
+		var cardNumber = null;
+		var cardType = null;
+		$.ajax({
+
+			url : '/user/'+userId,
+			type : 'GET',
+			data : {},
+			success : function(data){
+				cardNumber = data['cardNum'];
+				cardType = data['cardType'];
+			}
+		});
+		for(var i=0;i<shopCart.cart.length;i++){
+			var show_id = shopCart.cart[i].show_id;
+			 $.ajax({
+
+			 		url : '/user/cart/display',
+			 		type : 'GET',
+			 		data : {"showid" : show_id},
+			 		success : function(data){
+			 			var htmlToAppend = '';
+						  htmlToAppend += '<div class="cartitem"><div class="buttons"><span class="removebutton" id="del-btn" value= '+show_id+'></span></div><div class="buttons"><span class="updatebutton" id="edit-btn" value= '+show_id+'></span></div><div class="image"><img src="/images/'+data['image']+'" style="width:100px; height:100px" alt="" /></div>' +
+						  '<div class="mydesc"><span>Title :'+data['title']+'</span><span>Date :'+shopCart.cart[i].show_date+'</span><span>Show time :'+data['showTiming']+'</span><span>Quantity :'+shopCart.cart[i].qty+'</span></div>'+
+						  '<div class="finalp">$'+shopCart.cart[i].qty * data['price']+'</div></div>';
+
+			 			$("#shoppingcart").append(htmlToAppend);	
+
+			 			
+			 		},
+			 		async: false
+
+			 });
+
+		}
+
+		if(ticketCart != null && ticketCart.cart.length > 0){
+			
+			if(typeof cardNumber == 'undefined' || cardNumber == null){
+				$("#shoppingcart").append('<div class="credcard"><label>Card type : </label><select name="credtype" id ="credtype"><option value="none" selected> Select card type </option><option value="credit"> Credit card </option><option value="debit"> Debit card </option></select><br><br><label>Credit Card Number : </label><input id="cardnum" type="text" placeholder="5555 5555 5555 5555" maxlength="16"/></div>');
+			}else{
+				var masked = cardNumber.replace(/\d(?=\d{4})/g, "*");
+				$("#shoppingcart").append('<div class="credcard"><label>Card type : </label><select name="credtype" id ="credtype"><option value='+cardType+'>'+cardType+' </option></select><br><br><label>Credit Card Number : </label><input type="text" id="cardnum" value = '+ masked+' maxlength="16"/></div>');
+			}
+
+			$("#shoppingcart").append('<div class="purchase"><input type="button" id="checkout" class="btn btn-warning"  role="button" value="Proceed to Checkout"></input></div>');
+		}
+
+	});
+
+	$(document).ready(function(){
+
+		$('.removebutton').click(function(){
+
+			var val = $(this).attr('value');
+			$.ajax({
+
+				url:'/user/cart',
+				type:'DELETE',
+				data:{"showid":val},
+				success : function(data){
+					console.log("came here");
+					alert('Item in the cart is delete');
+					window.location.href = '/user/cart';
+				}
+			})
+
+		});
+
+	})
+
+	$(document).ready(function(){
+
+		$('.updatebutton').click(function(){
+
+			var show_id = $(this).attr('value');
+			var newQty = prompt("Update the ticket quantity","");
+			console.log(show_id);
+			$.ajax({
+
+				url:'/user/cart/'+show_id,
+				type:'POST',
+				data:{"qty":newQty},
+				success : function(data){
+					alert('Item update successfully');
+					window.location.href='/user/cart';
+				}
+			})
+		});
+
+	});
+
+	$(document).ready(function(){
+
+		$('#checkout').click(function(){
+			var proceed = confirm("Do you want to proceed with the bookings?");
+			var shopCart = <%- JSON.stringify(cart) %>;
+			var userId = shopCart.user_id;
+			var cardType = document.getElementById("credtype").value;
+			var cardNum = document.getElementById("cardnum").value;
+		
+			if(proceed == true){
+			console.log("Arrived here");
+			$.ajax({
+				url:'/user/booking',
+				type:'POST',
+				data:{},
+				success : function(data){
+					alert('Successsfully Booked');
+					window.location.href='/home';
+
+				}
+			});
+		}
+		});
+	});
+
+</script>
+<div class="shopcart" id="shoppingcart">
+  <div class="title">
+    Ticket Cart
+  </div>
+</div>
+
+<%- include ('partials/footer') %>

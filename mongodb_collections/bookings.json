@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "61ac232473785c462c5b1103"},
+  "user_id": "61ac224d73785c462c5b1101",
+  "show_id": {
+    "$oid": "61ac0c6bfb441e7824d766b8"},
+  "qty": "3",
+  "show_date": "2021-12-21",
+  "total_price": 45,
+  "booking_date": {
+    "$date": "2021-12-05T02:25:40.168Z"}
+},
+{
+  "_id": {
+    "$oid": "61ac5d272d2c1929180d631c"},
+  "user_id": "61abe2b4a080e57170f9aaec",
+  "show_id": {
+    "$oid": "61ac0bf4fb441e7824d766b5"},
+  "qty": "5",
+  "show_date": "2021-12-21",
+  "total_price": 75,
+  "booking_date": {
+    "$date": "2021-12-05T06:33:11.522Z"}
+},
+{
+  "_id": {
+    "$oid": "61ad9e05552cef742cd8fc23"},
+  "user_id": "61abe2b4a080e57170f9aaec",
+  "show_id": {
+    "$oid": "61ac0c39fb441e7824d766b6"},
+  "qty": "2",
+  "show_date": "2021-12-21",
+  "total_price": 30,
+  "booking_date": {
+    "$date": "2021-12-06T05:22:13.412Z"}
+},
+{
+  "_id": {
+    "$oid": "61ada062ffbe6166d8d8c9f9"},
+  "user_id": "61abe494a080e57170f9aaee",
+  "show_id": {
+    "$oid": "61ac0bdcfb441e7824d766b4"},
+  "qty": "4",
+  "show_date": "2021-12-20",
+  "total_price": 60,
+  "booking_date": {
+    "$date": "2021-12-06T05:32:18.975Z"}
+},
+{
+  "_id": {
+    "$oid": "61ada261ffbe6166d8d8c9fa"},
+  "user_id": "61abe2b4a080e57170f9aaec",
+  "show_id": {
+    "$oid": "61ac0d76fb441e7824d766c3"},
+  "qty": "3",
+  "show_date": "2021-12-14",
+  "total_price": 45,
+  "booking_date": {
+    "$date": "2021-12-06T05:40:49.912Z"}
+},
+{
+  "_id": {
+    "$oid": "61ada4e60a76764ffc6c8b79"},
+  "user_id": "61abe2b4a080e57170f9aaec",
+  "show_id": {
+    "$oid": "61ac0ccffb441e7824d766bc"},
+  "qty": "5",
+  "show_date": "2021-12-22",
+  "total_price": 75,
+  "booking_date": {
+    "$date": "2021-12-06T05:51:34.480Z"}
+},
+{
+  "_id": {
+    "$oid": "61adb5701135824f3cedb06e"},
+  "user_id": "61abe2b4a080e57170f9aaec",
+  "show_id": {
+    "$oid": "61ac0d2efb441e7824d766bf"},
+  "qty": "7",
+  "show_date": "2021-12-23",
+  "total_price": 105,
+  "booking_date": {
+    "$date": "2021-12-06T07:02:08.500Z"}
+},
+{
+  "_id": {
+    "$oid": "61adbfee69bf132fd4756e64"},
+  "user_id": "61adbfca69bf132fd4756e62",
+  "show_id": {
+    "$oid": "61ac0f61fb441e7824d766d4"},
+  "qty": "3",
+  "show_date": "2021-12-21",
+  "total_price": 45,
+  "booking_date": {
+    "$date": "2021-12-06T07:46:54.820Z"}
+}]

@@ -1,0 +1,109 @@
+<%- include ('partials/loginheader') %>
+
+<script>
+
+$(document).ready(function () {
+    $('html, body').animate({
+        scrollTop: $('#search').offset().top
+    }, 1000);
+});
+
+
+$(document).ready(function(){
+	ajaxFunction(1);
+
+});
+
+$(document).ready(function(){
+
+	$("#but").click(function(){
+	var page = 1;
+	ajaxFunction(page);
+});
+
+});
+
+function ajaxFunction(page){
+	var title = $("#title").val();
+	var genre = $("#genre").val();
+	$("#clear").empty();
+	$('#pageul').empty();
+	$.ajax({
+
+		url:'/movies/search',
+		type:'GET',
+		data: {"title": title,"genre":genre,"page":page},
+		success : function(data){
+			var htmlToAppend = '';
+
+			for(var i=0;i<data.movies.length;i++){
+				htmlToAppend += '<div class="sm-col-3"><ul id="appendList"><li style="list-style-type:none"><img src="images/' + data.movies[i]["image"] + '"style="width:200px; height:200px" />' + '<div class="caption"><a href="/movies/booktickets/' + data.movies[i]["_id"] + '">' + data.movies[i]["title"] + '</a></div></li>' + '</ul></div>';
+			}
+
+			$("#clear").append(htmlToAppend)
+			var returnPage = data.page;
+			var returnPageCount = data.pageCount;
+			var htmlPageToAppend = '';
+			for(var i = 1;i<=returnPageCount;i++){
+				htmlPageToAppend += '<li class="page-item" id="page_'+i+'"><a onclick="ajaxFunction('+i+')" class="page-link" id='+i+'>'+i+'</a></li>';
+			}
+			$('#pageul').append(htmlPageToAppend);
+			$('#page_'+returnPage).addClass("active");
+			},
+		error: function(error){
+			window.location.pathname = "invaliduser";
+		}
+
+
+	});
+}
+
+
+
+</script>
+
+<div class="container" id="search">
+
+	<form action="#" method="POST">
+	<div class="form-group">
+	<label for="title">Movie Title</label>
+	<input type="text" name="title" id="title" class="form-control"></input>
+	</div>
+	<div class="form-group">
+	<select id="genre" name="genre" class="form-control">
+		<option value="">All genre</option>
+		<option value="horror">Horror</option>
+		<option value="scifi">SciFi</option>
+		<option value="fantasy">Fantasy</option>
+		<option value="drama">Drama</option>
+		<option value="action">Action</option>
+	</select>
+	<input type="button" class="btn btn-primary" id="but" value="Search" name='SubmitButton'>
+	</form>
+<div>
+<br /><br />
+
+<% if(type == 'A') { %>
+<div><a href="/admin/addMovie" ><input type="button" class="btn btn-primary" id="addMovie" value="Add Movie" name='SubmitButton'></a>
+</div>
+<% } %>
+
+<div class = "container" id="output">
+
+<div class="row" id="clear">
+<div class="sm-col-3" >
+<ul id="appendList">
+</ul>
+</div>
+</div>
+</div>
+
+<div class="pagenav" id="pgnav">
+<nav aria-label="Page navigation">
+  <ul class="pagination" id="pageul">
+  </ul>
+</nav>
+</div>
+
+
+<%- include ('partials/footer') %>

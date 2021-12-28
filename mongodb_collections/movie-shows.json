@@ -1,0 +1,340 @@
+[{
+  "_id": {
+    "$oid": "61ac0bb4fb441e7824d766b2"},
+  "movie_id": "61ac06a0fb441e7824d766a1",
+  "showTiming": "9:00am",
+  "capacity": "100",
+  "totalAvailableSeats": "100",
+  "screenNo": "A1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0bccfb441e7824d766b3"},
+  "movie_id": "61ac06a0fb441e7824d766a1",
+  "showTiming": "12:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "A2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0bdcfb441e7824d766b4"},
+  "movie_id": "61ac070bfb441e7824d766a2",
+  "showTiming": "3:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": 146,
+  "screenNo": "B1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0bf4fb441e7824d766b5"},
+  "movie_id": "61ac070bfb441e7824d766a2",
+  "showTiming": "4:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": 195,
+  "screenNo": "B2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0c39fb441e7824d766b6"},
+  "movie_id": "61ac074ffb441e7824d766a3",
+  "showTiming": "10:00am",
+  "capacity": "150",
+  "totalAvailableSeats": 148,
+  "screenNo": "C1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0c50fb441e7824d766b7"},
+  "movie_id": "61ac074ffb441e7824d766a3",
+  "showTiming": "4:00pm",
+  "capacity": "250",
+  "totalAvailableSeats": "250",
+  "screenNo": "C2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0c6bfb441e7824d766b8"},
+  "movie_id": "61ac079bfb441e7824d766a4",
+  "showTiming": "12:00pm",
+  "capacity": "100",
+  "totalAvailableSeats": 97,
+  "screenNo": "D1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0c7cfb441e7824d766b9"},
+  "movie_id": "61ac079bfb441e7824d766a4",
+  "showTiming": "2:00pm",
+  "capacity": "100",
+  "totalAvailableSeats": "100",
+  "screenNo": "D2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0cb4fb441e7824d766ba"},
+  "movie_id": "61ac0849fb441e7824d766a6",
+  "showTiming": "10:00am",
+  "capacity": "100",
+  "totalAvailableSeats": "100",
+  "screenNo": "E1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0cc2fb441e7824d766bb"},
+  "movie_id": "61ac0849fb441e7824d766a6",
+  "showTiming": "1:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "E2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0ccffb441e7824d766bc"},
+  "movie_id": "61ac0883fb441e7824d766a7",
+  "showTiming": "1:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": 195,
+  "screenNo": "F1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0ceafb441e7824d766bd"},
+  "movie_id": "61ac0883fb441e7824d766a7",
+  "showTiming": "3:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "F2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0d2efb441e7824d766bf"},
+  "movie_id": "61ac08c0fb441e7824d766a8",
+  "showTiming": "11:00am",
+  "capacity": "350",
+  "totalAvailableSeats": 343,
+  "screenNo": "H1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0d3dfb441e7824d766c0"},
+  "movie_id": "61ac08c0fb441e7824d766a8",
+  "showTiming": "5:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "H2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0d67fb441e7824d766c2"},
+  "movie_id": "61ac07cffb441e7824d766a5",
+  "showTiming": "7:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "I1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0d76fb441e7824d766c3"},
+  "movie_id": "61ac07cffb441e7824d766a5",
+  "showTiming": "9:00pm",
+  "capacity": "300",
+  "totalAvailableSeats": 297,
+  "screenNo": "I2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0dddfb441e7824d766c4"},
+  "movie_id": "61ac08eefb441e7824d766a9",
+  "showTiming": "6:00pm",
+  "capacity": "100",
+  "totalAvailableSeats": "100",
+  "screenNo": "J1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0df3fb441e7824d766c5"},
+  "movie_id": "61ac08eefb441e7824d766a9",
+  "showTiming": "8:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "J2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e15fb441e7824d766c6"},
+  "movie_id": "61ac0926fb441e7824d766aa",
+  "showTiming": "5:00pm",
+  "capacity": "100",
+  "totalAvailableSeats": "100",
+  "screenNo": "K1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e27fb441e7824d766c7"},
+  "movie_id": "61ac0926fb441e7824d766aa",
+  "showTiming": "9:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "K2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e34fb441e7824d766c8"},
+  "movie_id": "61ac095afb441e7824d766ab",
+  "showTiming": "11:00am",
+  "capacity": "300",
+  "totalAvailableSeats": "300",
+  "screenNo": "L1",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e4cfb441e7824d766c9"},
+  "movie_id": "61ac095afb441e7824d766ab",
+  "showTiming": "3:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "K2",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e5efb441e7824d766ca"},
+  "movie_id": "61ac0992fb441e7824d766ac",
+  "showTiming": "2:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "A3",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e6efb441e7824d766cb"},
+  "movie_id": "61ac0992fb441e7824d766ac",
+  "showTiming": "4:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "A4",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e91fb441e7824d766cc"},
+  "movie_id": "61ac09c2fb441e7824d766ad",
+  "showTiming": "11:00am",
+  "capacity": "250",
+  "totalAvailableSeats": "250",
+  "screenNo": "B3",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0e9ffb441e7824d766cd"},
+  "movie_id": "61ac09f1fb441e7824d766ae",
+  "showTiming": "2:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "C3",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0eadfb441e7824d766ce"},
+  "movie_id": "61ac0a3cfb441e7824d766af",
+  "showTiming": "5:00pm",
+  "capacity": "300",
+  "totalAvailableSeats": "300",
+  "screenNo": "D3",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0ebefb441e7824d766cf"},
+  "movie_id": "61ac0ad2fb441e7824d766b0",
+  "showTiming": "10:00am",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "E3",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0ee0fb441e7824d766d0"},
+  "movie_id": "61ac09c2fb441e7824d766ad",
+  "showTiming": "4:00pm",
+  "capacity": "200",
+  "totalAvailableSeats": "200",
+  "screenNo": "B4",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0f22fb441e7824d766d1"},
+  "movie_id": "61ac09f1fb441e7824d766ae",
+  "showTiming": "7:00pm",
+  "capacity": "250",
+  "totalAvailableSeats": "250",
+  "screenNo": "C4",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0f35fb441e7824d766d2"},
+  "movie_id": "61ac0a3cfb441e7824d766af",
+  "showTiming": "8:00pm",
+  "capacity": "250",
+  "totalAvailableSeats": "250",
+  "screenNo": "D4",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0f45fb441e7824d766d3"},
+  "movie_id": "61ac0ad2fb441e7824d766b0",
+  "showTiming": "12:00pm",
+  "capacity": "150",
+  "totalAvailableSeats": "150",
+  "screenNo": "E4",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0f61fb441e7824d766d4"},
+  "movie_id": "61ac0b13fb441e7824d766b1",
+  "showTiming": "11:00am",
+  "capacity": "250",
+  "totalAvailableSeats": 247,
+  "screenNo": "J3",
+  "price": "15"
+},
+{
+  "_id": {
+    "$oid": "61ac0f72fb441e7824d766d5"},
+  "movie_id": "61ac0b13fb441e7824d766b1",
+  "showTiming": "6:00pm",
+  "capacity": "100",
+  "totalAvailableSeats": "100",
+  "screenNo": "J4",
+  "price": "15"
+}]

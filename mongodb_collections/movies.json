@@ -1,0 +1,255 @@
+[{
+  "_id": {
+    "$oid": "61ac06a0fb441e7824d766a1"},
+  "title": "The Conjuring",
+  "genre": "horror",
+  "length": "3h",
+  "synopsys": "In 1970, paranormal investigators and demonologists Lorraine (Vera Farmiga) and Ed (Patrick Wilson) Warren are summoned to the home of Carolyn (Lili Taylor) and Roger (Ron Livingston) Perron. The Perrons and their five daughters have recently moved into a secluded farmhouse, where a supernatural presence has made itself known. Though the manifestations are relatively benign at first, events soon escalate in horrifying fashion, especially after the Warrens discover the house's macabre history.",
+  "image": "Conjuring.jpg",
+  "availableUntil": {
+    "$date": "2021-12-15T00:00:00Z"},
+  "showTimings": {
+    "1": "9:00am",
+    "2": "12:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac070bfb441e7824d766a2"},
+  "title": "It Comes At Night",
+  "genre": "horror",
+  "length": "1h30m",
+  "synopsys": "After a mysterious apocalypse leaves the world with few survivors, two families are forced to share a home in an uneasy alliance to keep the outside evil at bay -- only to learn that the true horror may come from within.",
+  "image": "itcomes.jpg",
+  "availableUntil": {
+    "$date": "2021-12-13T00:00:00Z"},
+  "showTimings": {
+    "1": "3:00pm",
+    "2": "4:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac074ffb441e7824d766a3"},
+  "title": "The Lighthouse",
+  "genre": "horror",
+  "length": "1h50m",
+  "synopsys": "Two lighthouse keepers try to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
+  "image": "lighthouse.jpg",
+  "availableUntil": {
+    "$date": "2021-12-16T00:00:00Z"},
+  "showTimings": {
+    "1": "10:00am",
+    "2": "4:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac079bfb441e7824d766a4"},
+  "title": "Tenet",
+  "genre": "scifi",
+  "length": "2h30m",
+  "synopsys": "A secret agent is given a single word as his weapon and sent to prevent the onset of World War III. He must travel through time and bend the laws of nature in order to be successful in his mission.",
+  "image": "tenet.jpg",
+  "availableUntil": {
+    "$date": "2021-12-22T00:00:00Z"},
+  "showTimings": {
+    "1": "12:00pm",
+    "2": "2:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac07cffb441e7824d766a5"},
+  "title": "Venom",
+  "genre": "scifi",
+  "length": "1h52m",
+  "synopsys": "Journalist Eddie Brock is trying to take down Carlton Drake, the notorious and brilliant founder of the Life Foundation. While investigating one of Drake's experiments, Eddie's body merges with the alien Venom -- leaving him with superhuman strength and power. Twisted, dark and fueled by rage, Venom tries to control the new and dangerous abilities that Eddie finds so intoxicating.",
+  "image": "venom.jpg",
+  "availableUntil": {
+    "$date": "2021-12-21T00:00:00Z"},
+  "showTimings": {
+    "1": "7:00pm",
+    "2": "9:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0849fb441e7824d766a6"},
+  "title": "Dune",
+  "genre": "scifi",
+  "length": "2h35m",
+  "synopsys": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence, only those who can conquer their own fear will survive.",
+  "image": "dune.jpg",
+  "availableUntil": {
+    "$date": "2021-12-23T00:00:00Z"},
+  "showTimings": {
+    "1": "10:00am",
+    "2": "1:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0883fb441e7824d766a7"},
+  "title": "Interstellar",
+  "genre": "scifi",
+  "length": "2h49m",
+  "synopsys": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole. But first, Brand must send former NASA pilot Cooper (Matthew McConaughey) and a team of researchers through the wormhole and across the galaxy to find out which of three planets could be mankind's new home.",
+  "image": "interst.jpg",
+  "availableUntil": {
+    "$date": "2021-12-16T00:00:00Z"},
+  "showTimings": {
+    "1": "1:00pm",
+    "2": "3:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac08c0fb441e7824d766a8"},
+  "title": "Spider-Man: Homecoming",
+  "genre": "fantasy",
+  "length": "2h10m",
+  "synopsys": "Thrilled by his experience with the Avengers, young Peter Parker returns home to live with his Aunt May. Under the watchful eye of mentor Tony Stark, Parker starts to embrace his newfound identity as Spider-Man. He also tries to return to his normal daily routine -- distracted by thoughts of proving himself to be more than just a friendly neighborhood superhero. Peter must soon put his powers to the test when the evil Vulture emerges to threaten everything that he holds dear.",
+  "image": "spidy.jpg",
+  "availableUntil": {
+    "$date": "2021-12-24T00:00:00Z"},
+  "showTimings": {
+    "1": "11:00am",
+    "2": "5:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac08eefb441e7824d766a9"},
+  "title": "Deadpool",
+  "genre": "fantasy",
+  "length": "1h40m",
+  "synopsys": "Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life.",
+  "image": "deadpool.jpg",
+  "availableUntil": {
+    "$date": "2021-12-28T00:00:00Z"},
+  "showTimings": {
+    "1": "6:00pm",
+    "2": "8:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0926fb441e7824d766aa"},
+  "title": "Fantastic Four",
+  "genre": "fantasy",
+  "length": "2h",
+  "synopsys": "Scientist Reed Richards (Ioan Gruffudd) persuades his arrogant former classmate, Victor von Doom (Julian McMahon), to fund his experiments with cosmic energy. On von Doom's space station, the crew -- including astronaut Ben Grimm (Michael Chiklis), researcher Sue Storm (Jessica Alba) and pilot Johnny Storm (Chris Evans) -- are exposed to a mysterious cosmic storm that bestows super powers upon them. As they cope with their transformations, von Doom vows his revenge.",
+  "image": "F4.jpg",
+  "availableUntil": {
+    "$date": "2021-12-31T00:00:00Z"},
+  "showTimings": {
+    "1": "5:00pm",
+    "2": "9:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac095afb441e7824d766ab"},
+  "title": "Titanic",
+  "genre": "drama",
+  "length": "3h10m",
+  "synopsys": "James Cameron's \"Titanic\" is an epic, action-packed romance set against the ill-fated maiden voyage of the R.M.S. Titanic; the pride and joy of the White Star Line and, at the time, the largest moving object ever built. She was the most luxurious liner of her era -- the \"ship of dreams\" -- which ultimately carried over 1,500 people to their death in the ice cold waters of the North Atlantic in the early hours of April 15, 1912.",
+  "image": "tittanic.jpg",
+  "availableUntil": {
+    "$date": "2022-03-15T00:00:00Z"},
+  "showTimings": {
+    "1": "11:00am",
+    "2": "3:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0992fb441e7824d766ac"},
+  "title": "Life of Pi",
+  "genre": "drama",
+  "length": "2h17m",
+  "synopsys": "After deciding to sell their zoo in India and move to Canada, Santosh and Gita Patel board a freighter with their sons and a few remaining animals. Tragedy strikes when a terrible storm sinks the ship, leaving the Patels' teenage son, Pi (Suraj Sharma), as the only human survivor. However, Pi is not alone; a fearsome Bengal tiger has also found refuge aboard the lifeboat. As days turn into weeks and weeks drag into months, Pi and the tiger must learn to trust each other if both are to survive.",
+  "image": "lop.jpg",
+  "availableUntil": {
+    "$date": "2022-01-26T00:00:00Z"},
+  "showTimings": {
+    "1": "2:00pm",
+    "2": "4:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac09c2fb441e7824d766ad"},
+  "title": "The Imitation Game",
+  "genre": "drama",
+  "length": "1h45m",
+  "synopsys": "In 1939, newly created British intelligence agency MI6 recruits Cambridge mathematics alumnus Alan Turing (Benedict Cumberbatch) to crack Nazi codes, including Enigma -- which cryptanalysts had thought unbreakable. Turing's team, including Joan Clarke (Keira Knightley), analyze Enigma messages while he builds a machine to decipher them. Turing and team finally succeed and become heroes, but in 1952, the quiet genius encounters disgrace when authorities reveal he is gay and send him to prison.",
+  "image": "imit.jpg",
+  "availableUntil": {
+    "$date": "2022-01-19T00:00:00Z"},
+  "showTimings": {
+    "1": "11:00am",
+    "2": "4:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac09f1fb441e7824d766ae"},
+  "title": "Parasite",
+  "genre": "drama",
+  "length": "2h12m",
+  "synopsys": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+  "image": "parasite.jpg",
+  "availableUntil": {
+    "$date": "2021-12-31T00:00:00Z"},
+  "showTimings": {
+    "1": "2:00pm",
+    "2": "7:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0a3cfb441e7824d766af"},
+  "title": "Die Hard",
+  "genre": "action",
+  "length": "2h05m",
+  "synopsys": "New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for. But the festivities are interrupted by a group of terrorists who take over the exclusive high-rise, and everyone in it. Very soon McClane realizes that there's no one to save the hostages -- but him.",
+  "image": "diehard.jpg",
+  "availableUntil": {
+    "$date": "2022-02-08T00:00:00Z"},
+  "showTimings": {
+    "1": "5:00pm",
+    "2": "8:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0ad2fb441e7824d766b0"},
+  "title": "Fight Club",
+  "genre": "action",
+  "length": "2h20m",
+  "synopsys": "A depressed man (Edward Norton) suffering from insomnia meets a strange soap salesman named Tyler Durden (Brad Pitt) and soon finds himself living in his squalid house after his perfect apartment is destroyed. The two bored men form an underground club with strict rules and fight other men who are fed up with their mundane lives. Their perfect partnership frays when Marla (Helena Bonham Carter), a fellow support group crasher, attracts Tyler's attention.",
+  "image": "fightclub.jpg",
+  "availableUntil": {
+    "$date": "2022-01-20T00:00:00Z"},
+  "showTimings": {
+    "1": "10:00am",
+    "2": "12:00pm"},
+  "status": "A"
+},
+{
+  "_id": {
+    "$oid": "61ac0b13fb441e7824d766b1"},
+  "title": "John Wick",
+  "genre": "action",
+  "length": "1h40m",
+  "synopsys": "Legendary assassin John Wick (Keanu Reeves) retired from his violent career after marrying the love of his life. Her sudden death leaves John in deep mourning. When sadistic mobster Iosef Tarasov (Alfie Allen) and his thugs steal John's prized car and kill the puppy that was a last gift from his wife, John unleashes the remorseless killing machine within and seeks vengeance. Meanwhile, Iosef's father (Michael Nyqvist) -- John's former colleague -- puts a huge bounty on John's head.",
+  "image": "Jwick.jpg",
+  "availableUntil": {
+    "$date": "2022-02-09T00:00:00Z"},
+  "showTimings": {
+    "1": "11:00am",
+    "2": "6:00pm"},
+  "status": "A"
+}]

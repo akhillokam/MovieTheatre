@@ -1,0 +1,51 @@
+<%- include ('partials/loginheader') %>
+<div class="container" style="background-color: antiquewhite;" id="mframe">
+<h1>Add New Movie</h1>
+<form action="/movies" enctype="multipart/form-data" method="POST">
+
+
+<div class="form-group">
+		<label>Movie Name</label>
+		<input type="text" placeholder="movie name"name="title" class="form-control"></input>
+</div>
+<div class="form-group">
+		<label>Genre</label>
+		<select id="genre" name="genre" class="form-control">
+			<option value="">All genre</option>
+			<option value="action">Action</option>
+			<option value="horror">Horror</option>
+			<option value="drama">Drama</option>
+			<option value="fantasy">Fantasy</option>
+			<option value="scifi">SciFi</option>
+		</select>
+</div>
+<div class="form-group">
+		<label>Runtime</label>
+		<input type="text" placeholder="runtime"name="length" class="form-control"></input>
+</div>
+<div class="form-group">
+	<label>Movie Poster</label>
+	<input type="file" accept="image/*" name="image" class="form-control"></input>
+</div>
+<div class="form-group">
+	<label>Summary</label>
+	<textarea name="synopsis" placeholder="summary" class="form-control"></textarea>
+</div>
+<div class="form-group">
+		<label>Available Until</label>
+		<input type="date" name="availableUntil" placeholder="Available until" class="form-control"></input>
+</div>
+<div class="form-group">
+	<label>Timings</label>
+	<input type="text" name="showTimings" placeholder="Showtiming" class="form-control"></input>
+</div>
+<div class="form-group">
+		<button type="submit"  class="btn btn-warning" >Add Movie</button>
+</div>
+
+
+</form>
+<a href="/home">Cancel</a>
+</div>
+
+<%- include ('partials/footer') %>

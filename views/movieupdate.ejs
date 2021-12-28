@@ -1,0 +1,50 @@
+<%- include ('partials/loginheader') %>
+
+<script>
+
+	$(document).ready(function(){
+		var date = <%- JSON.stringify(movie.availableUntil) %>;
+		$('#availableUntil').val((date.split('T'))[0]);
+		console.log((date.split('T'))[0]);
+	})
+
+</script>
+<div class="container" id="mframe">
+<h1>Update Movie</h1>
+<p><img src="/images/<%= movie.image %>" style="width:300px; height:300px" /></p>
+<form action="/admin/movieupdate/<%= movie._id%>" enctype="multipart/form-data" method="POST">
+
+
+<div class="form-group">
+		<label>Movie Title</label>
+		<input type="text" id="title" name="title" value="<%= movie.title%>" class="form-control"></input>
+</div>
+<div class="form-group">
+		<label>Genre</label>
+		<input type="text" id="genre" name="genre" value="<%= movie.genre%>" class="form-control"></input>
+</div>
+<div class="form-group">
+		<label>Upload Image</label>
+		<input type="file" id="image" accept="image/*" value="<%= movie.image%>" name="image" class="form-control"></input>
+</div>
+<div class="form-group">
+		<label>Movie Length</label>
+		<input type="text" id="length" name="length" value="<%= movie.length%>" class="form-control"></input>
+</div>
+<div class="form-group">
+		<label>Available Until</label>
+		<input type="date" id="availableUntil" name="availableUntil" value="<%= movie.availableUntil%>" class="form-control"></input>
+</div>
+<div class="form-group">
+		<label>Synopsis</label>
+		<textarea name="synopsis" id="synopsis"  class="form-control"><%= movie.synopsys%></textarea>
+</div>
+<div class="form-group">
+		<button type="submit" class="btn btn-info" >Save</button>
+</div>
+
+
+</form>
+<a href="/home">Cancel</a>
+</div>
+<%- include ('partials/footer') %>

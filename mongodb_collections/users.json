@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "61abe2b4a080e57170f9aaec"},
+  "username": "slokam",
+  "password": "$2a$12$Yb5OgrtSjwKnZH8eYSGcSuR4ndjm3IUtZV8oInV147Xerl2xnNPE6",
+  "email": "akhillokam@gmail.com",
+  "firstname": "Akhil",
+  "lastname": "Lokam",
+  "secretkey": "METFIJR6OF2G26KBGVVWE6Z7GAVE6ZZ4",
+  "type": "A"
+},
+{
+  "_id": {
+    "$oid": "61abe494a080e57170f9aaee"},
+  "username": "avelad",
+  "password": "$2a$12$iTTtXwYNvC0jZuHZ4izmoOG3OMaH8EguWlX99bOlthX7ys9AMsBbi",
+  "email": "avelad@gmail.com",
+  "firstname": "Abhilash",
+  "lastname": "Veladineni",
+  "secretkey": "IY3WYRTVIVLEE5RTEVEFI3KCMIUVMRB6",
+  "type": "N"
+},
+{
+  "_id": {
+    "$oid": "61abed6107c23856486dd75b"},
+  "username": "vkumar",
+  "password": "$2a$12$XsmmXcje4FjpX111Z6PKqOvDlOLsxX6PDxS96S.7tRewdq4OpQAKi",
+  "email": "vkumar@gmail.com",
+  "firstname": "v",
+  "lastname": "k",
+  "secretkey": "GY2DW62CJFFGE3CKLNSD4VJ6EF6W64JQ",
+  "type": "N"
+},
+{
+  "_id": {
+    "$oid": "61ac224d73785c462c5b1101"},
+  "username": "cargo",
+  "password": "$2a$12$wR2AYvN/6KvKQS6Gm4r4WOWdaTRAfule2UMFLqUQnY0NR.7z73it.",
+  "email": "cargo@gmail.com",
+  "firstname": "Carla",
+  "lastname": "Goswami",
+  "secretkey": "HEYVUXKWPM4CIWBUEVEHWSRTK5RWWKTB",
+  "type": "N"
+},
+{
+  "_id": {
+    "$oid": "61adbfca69bf132fd4756e62"},
+  "username": "bnitin",
+  "password": "$2a$12$7w1kIbsaNhO7xc1k09RTHuwOGwj0TrLnegQ4HicPUZRc.hns5XC8u",
+  "email": "bnitin@gmail.com",
+  "firstname": "Nitin",
+  "lastname": "borel",
+  "secretkey": "NBPC4XJDOZHU23RKGZDEATK5MUWFG4RZ",
+  "type": "N"
+}]

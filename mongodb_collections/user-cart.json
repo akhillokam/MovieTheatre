@@ -1,0 +1,156 @@
+[{
+  "_id": {
+    "$oid": "61abe2b4a080e57170f9aaed"
+  },
+  "user_id": {
+    "$oid": "61abe2b4a080e57170f9aaec"
+  },
+  "cart": [
+    {
+      "show_id": "61ac0c39fb441e7824d766b6",
+      "qty": "3",
+      "show_date": "2021-12-29"
+    }
+  ],
+  "lastUpdated": {
+    "$date": "2021-12-04T21:50:44.695Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abe494a080e57170f9aaef"
+  },
+  "user_id": {
+    "$oid": "61abe494a080e57170f9aaee"
+  },
+  "cart": [
+    {
+      "show_id": "61ac0c6bfb441e7824d766b8",
+      "qty": "1",
+      "show_date": "2021-12-21"
+    }
+  ],
+  "lastUpdated": {
+    "$date": "2021-12-04T21:58:44.665Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abe9d571a23635386f8fe8"
+  },
+  "user_id": {
+    "$oid": "61abe9d571a23635386f8fe7"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:21:09.702Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abea0e3ef80d5cbc70b5fd"
+  },
+  "user_id": {
+    "$oid": "61abea0e3ef80d5cbc70b5fc"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:22:06.234Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abea345bb61f46c46b6ec3"
+  },
+  "user_id": {
+    "$oid": "61abea345bb61f46c46b6ec2"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:22:44.657Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abeca78fc33e69702cde35"
+  },
+  "user_id": {
+    "$oid": "61abeca78fc33e69702cde34"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:33:11.158Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abed6107c23856486dd75c"
+  },
+  "user_id": {
+    "$oid": "61abed6107c23856486dd75b"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:36:17.653Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abedc707c23856486dd75e"
+  },
+  "user_id": {
+    "$oid": "61abedc707c23856486dd75d"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:37:59.917Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abee2a07c23856486dd760"
+  },
+  "user_id": {
+    "$oid": "61abee2a07c23856486dd75f"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:39:38.050Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abee7ee5d6b46c2c40db73"
+  },
+  "user_id": {
+    "$oid": "61abee7ee5d6b46c2c40db72"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-04T22:41:02.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ac220773785c462c5b1100"
+  },
+  "user_id": {
+    "$oid": "61ac220773785c462c5b10ff"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-05T02:20:55.251Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ac224d73785c462c5b1102"
+  },
+  "user_id": {
+    "$oid": "61ac224d73785c462c5b1101"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-05T02:22:05.557Z"
+  }
+},{
+  "_id": {
+    "$oid": "61adbfca69bf132fd4756e63"
+  },
+  "user_id": {
+    "$oid": "61adbfca69bf132fd4756e62"
+  },
+  "cart": [],
+  "lastUpdated": {
+    "$date": "2021-12-06T07:46:18.459Z"
+  }
+}]

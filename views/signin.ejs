@@ -1,0 +1,65 @@
+<%- include ('partials/header') %>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('#submit').click(function(){
+    $('#error').empty();
+
+    var username = $("#userName").val();
+    var password = $("#inputPassword").val();
+
+    $.ajax({
+
+      url:'/signin',
+      type: 'POST',
+      data: {"username": username,"password":password,
+    },
+      success : function(data){
+        window.location.pathname = "home";
+      },
+      error : function(error){
+        var htmlToAppend = '<p style="background-color:red;"> Incorrect username/password </p>';
+          if(error.responseText == 'showAlert')
+            $('#error').append(htmlToAppend);
+      }
+
+    });
+
+  });
+});
+</script>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-login " style="background-color: antiquewhite;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <div id="error"></div>
+            <form action="#" class="form-login">
+              <div class="form-label-group">
+                <label for="userName">Username</label>
+                <input type="text" name="username" id="userName" class="form-control" placeholder="Username" required autofocus>
+                
+              </div>
+
+              <div class="form-label-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                
+              </div>
+              <br>
+
+              <input id="submit" value="Sign In" class="btn btn-lg btn-primary btn-success btn-block" type="button"></input>
+              
+              <a href="/signup" class="btn btn-lg btn-google btn-block " type="submit"><i class="fab fa-google mr-2"></i> Sign up
+          </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include ('partials/footer') %>

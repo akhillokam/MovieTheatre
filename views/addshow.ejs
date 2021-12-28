@@ -1,0 +1,65 @@
+<%- include ('partials/loginheader') %>
+
+<script>
+	$(document).ready(function(){
+		$('#addshow').click(function(e){
+
+			var timing = $('#timing').val();
+			var capacity = $('#capacity').val();
+			var screen = $('#screen').val();
+			var price = $('#price').val();
+
+			if(timing == "none" || capacity == "" || screen == "" || price == ""){
+				e.preventDefault();
+				alert('Input all the required fields');
+			}
+
+			$.ajax({
+
+				url:'/movies/shows',
+				type:'POST',
+				data : {movie_id : <%- JSON.stringify(movie._id) %>,showTiming:timing,capacity:capacity,screen:screen,price:price},
+				success : function(data){
+					alert('Show successfully added');
+					window.location.href='/home';
+				}
+
+			});
+
+		});
+	});
+</script>
+
+<div class="container" id="mysynp">
+
+<h1>Add New Show</h1>
+<p><img src="/images/<%= movie.image %>" style="width:300px; height:300px" /></p>
+<p>Title : <%= movie.title %></p>
+<p>Genre : <%= movie.genre %></p>
+<p>Synopsis : <%= movie.synopsys %></p>
+<p>Length : <%= movie.length%></p>
+<p>Available Until(every day) : <%= movie.availableUntil%> </p>
+
+<p>Select Timings : 
+
+<select name="timing" id="timing">
+	<option value="none" selected> Select a timing </option>
+	<% for (var i=1;i <= Object.keys(movie.showTimings).length; i++) { %>
+	<option value="<%= movie.showTimings[i]%>"><%= movie.showTimings[i]%></option>
+	<% } %>
+</select>
+	
+	</p>
+
+<p><label>Add Capacity : </label><input type="text" class="form-control" id="capacity"></input></p>
+<p><label>Add Screen : </label><input type="text" class="form-control" id="screen"></input></p>
+<p><label>Add Price : </label><input type="text" class="form-control" id="price"></input></p>
+
+<input type="button" id="addshow" class="btn btn-warning"  role="button" value="Save Show"></input>
+</form>
+
+<p><a href="/movies/booktickets/<%= movie._id%>">Back to Movie</a></p>
+
+</div>
+</div>
+<%- include ('partials/footer') %>

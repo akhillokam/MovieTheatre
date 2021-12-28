@@ -1,0 +1,58 @@
+<%- include ('partials/loginheader') %>
+
+
+<script>
+	$(document).ready(function(){
+		var bookings = <%- JSON.stringify(bookings) %>;
+
+		for(var i=0;i<bookings.length;i++){
+
+			var booking = bookings[i];
+			var movie_id;
+			var show_timing;
+			$.ajax({
+
+				url:'/movies/shows',
+				type:'GET',
+				data :{"showid":booking.show_id},
+				success :function(data){
+					movie_id = data['movie_id'];
+					show_timing = data['showTiming'];
+
+					$.ajax({
+
+						url :'/movies/'+movie_id,
+						type : 'GET',
+						data :{},
+						success : function(movie){
+
+							console.log(movie);
+							var htmlToAppend = '';
+
+							htmlToAppend += '<div class="row"><div class="col-md-1"><img src="/images/'+movie[0]['image']+'" class="media-object img-thumbnail" /></div><div class="col-md-11"><div class="row"><div class="col-md-12"><span><strong>Title :'+movie[0]['title']+'</strong></span><br /><span>Show Timings :'+show_timing+'</span><br /><span>Show Date :'+booking.show_date+'</span><br /><span>Quantity :'+booking.qty+'</span><br /><span>Total price :'+booking.total_price+'</span><br /></div></div></div></div></div>';
+
+							$('#appendBody').append(htmlToAppend);
+
+
+						},async:false
+
+					});
+				},
+				async:false
+
+			});
+
+		}
+	});
+</script>
+
+
+<div class="container ohistoryframe">
+    <div class="panel panel-default history">
+        <div class="ptitle">
+            <strong>Order history</strong>
+        </div>
+        <div class="pframe" id="appendBody">
+     </div>
+</div>
+<%- include ('partials/footer') %>

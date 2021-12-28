@@ -1,0 +1,168 @@
+<%- include ('partials/header') %>
+
+  <script type="text/javascript">
+     var passwordRegex = new RegExp('^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+]).{6,}')
+    var emailRegex = new RegExp('[a-z0-9]+@[a-z]+[.][a-z]+');
+  </script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('#submit').click(function () {
+        console.log("here");
+        $('#userexist').empty();
+
+        var firstname = $("#firstName").val();
+        var lastname = $("#lastName").val();
+        var username = $('#userName').val();
+        var password = $('#inputPassword').val();
+        var email = $('#inputEmail').val();
+        if(firstname.length==0){
+          document.getElementById("userexist").innerHTML = "<p style='background-color:red;'>Enter first name</p>"
+        }
+        else if(lastname.length==0){
+          document.getElementById("userexist").innerHTML = "<p style='background-color:red;'>Enter last name</p>"
+        }
+        else if(username.length==0){
+          document.getElementById("userexist").innerHTML = "<p style='background-color:red;'>Enter username</p>"
+        }
+        else if(!passwordRegex.test(password)){
+          
+          document.getElementById("userexist").innerHTML = "<p style='background-color:red;'>Does not fullfill password requirements</p>"
+        }
+        else if(!emailRegex.test(email)){
+          document.getElementById("userexist").innerHTML = "<p style='background-color:red;'>Please enter valid email</p>"
+        }
+        else{     
+
+        $.ajax({
+
+          url: '/user',
+          type: 'GET',
+          data: { "username": username, "password": password, "email": email, "firstname": firstname, "lastname": lastname },
+          success: function (data) {
+            console.log(data);
+            var htmlToAppend = '<p style="background-color:red;">';
+            if (data > 0) {
+              htmlToAppend += 'Username or email already exist';
+              htmlToAppend += '</p>';
+              $('#userexist').append(htmlToAppend);
+            } else {
+              $.ajax({
+                url: '/signup',
+                type: 'POST',
+                data: { "username": username, "password": password, "email": email, "firstname": firstname, "lastname": lastname },
+                        success : function(data){
+                            window.location.href = '/';
+                        }
+              });
+            }
+          }
+        });
+      }
+      });
+    });
+  </script>
+  <br>
+  <br>
+  <br>
+  <section class="vh-100" style="background-color: #424747;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-9">
+
+          <h1 class="text-white mb-4">Sign Up</h1>
+
+          <div class="card" style="border-radius: 15px;background-color: antiquewhite;">
+            <div class="card-body">
+              <div id="userexist"></div>
+              <form action="#" name="registration" class="form-login">
+
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+
+                    <h6 class="mb-0">First Name</h6>
+
+                  </div>
+                  <div class="col-md-9 pe-5">
+
+                    <input type="text" id="firstName" placeholder="Enter first name" name="firstname" class="form-control form-control-lg" />
+                    
+                  </div>
+                </div>
+
+                <hr class="mx-n3">
+
+
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+
+                    <h6 class="mb-0">Last Name</h6>
+
+                  </div>
+                  <div class="col-md-9 pe-5">
+
+                    <input type="text" placeholder="Enter last name"id="lastName" name="lastname" class="form-control form-control-lg" />
+                    
+                  </div>
+                </div>
+
+                <hr class="mx-n3">
+
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+
+                    <h6 class="mb-0">Username</h6>
+
+                  </div>
+                  <div class="col-md-9 pe-5">
+
+                    <input type="text" id="userName" placeholder="Enter username" name="username" class="form-control form-control-lg" />
+
+                  </div>
+                </div>
+
+                <hr class="mx-n3">
+
+                <div class="row align-items-center pt-4 pb-3">
+                  <div class="col-md-3 ps-5">
+
+                    <h6 class="mb-0">Password</h6>
+                    
+
+                  </div>
+                  <div class="col-md-9 pe-5">
+
+                    <input type="password" id="inputPassword" placeholder="Enter password" name="password" class="form-control form-control-lg" />
+                    <div id="pwdmessage">The password field should contain at least six characters, one uppercase letter, one number and one special character (!,@,#,$,%,^,&,*,+)</div>
+                  </div>
+                </div>
+
+                <hr class="mx-n3">
+
+                <div class="row align-items-center py-3">
+                  <div class="col-md-3 ps-5">
+
+                    <h6 class="mb-0">Email address</h6>
+
+                  </div>
+                  <div class="col-md-9 pe-5">
+
+                    <input type="email" id="inputEmail" name="email" class="form-control form-control-lg"
+                      placeholder="enter emailid" />
+
+                  </div>
+                </div>
+
+                <hr class="mx-n3">
+                <div class="px-5 py-4">
+                  <input id="submit" value="Register" class="btn btn-lg btn-primary btn-block text-uppercase" type="button"></input>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
